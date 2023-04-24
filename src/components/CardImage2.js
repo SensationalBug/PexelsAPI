@@ -2,12 +2,12 @@ import React from "react";
 import { StyleSheet, Image, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
-const CardImage = ({ url }) => {
+const CardImage2 = ({ url }) => {
   const navigation = useNavigation();
   return (
     <TouchableOpacity
       style={styles.imageContainer}
-      onPress={() => navigation.navigate("Image", url)}
+      onPress={() => navigation.push("Image", url)}
     >
       <Image
         resizeMode="contain"
@@ -24,13 +24,14 @@ const CardImage = ({ url }) => {
 
 const styles = StyleSheet.create({
   imageContainer: {
-    margin: 5,
+    width: "50%",
+    padding: 5,
   },
   image: {
     borderRadius: 10,
     width: "100%",
-    height: 200,
+    height: 180,
   },
 });
 
-export default CardImage;
+export default CardImage2;

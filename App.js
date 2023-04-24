@@ -21,7 +21,7 @@ const App = () => {
               headerLeft: () => (
                 <Image style={styles.logo} source={pexelsLogo} />
               ),
-              title: "Pexels App",
+              title: "Pedro Image Downloader",
               headerRight: () => (
                 <TouchableOpacity
                   onPress={() => setOpenSearch(!openSearch)}
